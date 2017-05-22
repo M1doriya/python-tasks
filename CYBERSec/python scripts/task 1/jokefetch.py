@@ -15,6 +15,7 @@ for i in joke:
         joke3=joke2.get_text()
         jokes[1]=joke3
 with open("hindijoke.json",'w') as joke3:
+    
     json.dump(jokes,joke3,ensure_ascii=False,indent=8)
     time.sleep(15)
     
