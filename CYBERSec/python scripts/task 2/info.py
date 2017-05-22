@@ -18,6 +18,7 @@ def is_connected():
             pass
             return False
 info={}
+
 info['system']={}
 info['system']['MAC'] = ':'.join(['{:02x}'.format((uuid.getnode() >> i) & 0xff) for i in range(0,8*6,8)][::-1])
 info['system']['processortype'] = platform.machine()
